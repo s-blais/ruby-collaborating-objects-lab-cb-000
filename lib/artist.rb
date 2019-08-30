@@ -25,4 +25,8 @@ class Artist
     self.all[name] ||= artist = Artist.new (name)
   end
 
+  def print_songs
+    # puts names of all songs associated with this Artist
+  end
+
 end
