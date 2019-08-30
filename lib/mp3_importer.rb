@@ -18,6 +18,5 @@ class MP3Importer
     #fetch list of files from path
     #loop through the files and call new_by_filename  I think
 
-  end
 
 end
