@@ -7,12 +7,12 @@ class MP3Importer
   end
 
   def files
-    Dir[@path]
+    Dir.entries(@path)
   end
 
   def import
     self.files.each do |file|
-      Song.new_by_filename(filename) if file.end_with? (".mp3")
+      Song.new_by_filename(filename) #if file.end_with? (".mp3")
     end
   end
     #fetch list of files from path
